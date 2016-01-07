@@ -47,8 +47,8 @@ class FormBuilder
             ->setFormHelper($this->formHelper)
             ->setFormBuilder($this)
             ->setValidator($this->container->make('validator'))
-            ->setFormOptions($options)
-            ->addData($data);
+            ->addData($data)
+            ->setFormOptions($options);
 
         $form->buildForm();
 
@@ -86,7 +86,7 @@ class FormBuilder
             ->setFormHelper($this->formHelper)
             ->setFormBuilder($this)
             ->setValidator($this->container->make('validator'))
-            ->setFormOptions($options)
-            ->addData($data);
+            ->addData($data)
+            ->setFormOptions($options);
     }
 }
